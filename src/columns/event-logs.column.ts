@@ -1,0 +1,76 @@
+import { SearchFilter } from '@/src/enums/search-filter'
+
+export const EventLogsColumn = [
+  {
+    Header: 'イベントID',
+    accessor: '_id',
+    onlyCsv: false,
+    searchable: true,
+    type: 'text',
+    allowedOptions: [SearchFilter.EQUALS, SearchFilter.NOT_EQUALS],
+  },
+  {
+    Header: 'イベントカテゴリ',
+    accessor: 'eventId',
+    onlyCsv: false,
+    searchable: true,
+    type: 'text',
+    allowedOptions: [
+      SearchFilter.EQUALS,
+      SearchFilter.NOT_EQUALS,
+      SearchFilter.STARTS_WITH,
+      SearchFilter.ENDS_WITH,
+      SearchFilter.CONTAINS,
+    ],
+  },
+  {
+    Header: '詳細',
+    accessor: 'description',
+    onlyCsv: false,
+    searchable: true,
+    type: 'text',
+    allowedOptions: [
+      SearchFilter.EQUALS,
+      SearchFilter.NOT_EQUALS,
+      SearchFilter.STARTS_WITH,
+      SearchFilter.ENDS_WITH,
+      SearchFilter.CONTAINS,
+    ],
+  },
+  {
+    Header: 'サイトID',
+    accessor: 'siteId',
+    onlyCsv: false,
+    searchable: true,
+    type: 'text',
+    allowedOptions: [
+      SearchFilter.EQUALS,
+      SearchFilter.NOT_EQUALS,
+      SearchFilter.STARTS_WITH,
+      SearchFilter.ENDS_WITH,
+      SearchFilter.CONTAINS,
+    ],
+  },
+  {
+    Header: 'ユーザID',
+    accessor: 'userId',
+    onlyCsv: false,
+    searchable: true,
+    type: 'text',
+    allowedOptions: [
+      SearchFilter.EQUALS,
+      SearchFilter.NOT_EQUALS,
+      SearchFilter.STARTS_WITH,
+      SearchFilter.ENDS_WITH,
+      SearchFilter.CONTAINS,
+    ],
+  },
+  {
+    Header: '作成日',
+    accessor: 'created',
+    onlyCsv: false,
+    searchable: true,
+    type: 'date',
+    allowedOptions: [SearchFilter.LESS_THAN, SearchFilter.GREATER_THAN],
+  },
+]

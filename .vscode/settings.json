@@ -1,0 +1,6 @@
+{
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "prettier.prettierPath": "./node_modules/prettier"
+}
